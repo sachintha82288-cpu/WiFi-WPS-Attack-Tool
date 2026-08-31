@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wps-attack"
+version = "1.0.0"
+description = "WiFi WPS security analysis & attack toolkit: offline pixie-dust solver, vulnerable-AP simulator, wash scanning, reaver orchestration, risk reports"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GPL-3.0-or-later" }
+authors = [{ name = "WiFi-WPS-Attack-Tool contributors" }]
+keywords = ["wps", "wifi", "pixie-dust", "security", "audit"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+    "Topic :: System :: Networking",
+]
+# Core is 100% standard library. The optional backend speeds up AES.
+dependencies = []
+
+[project.optional-dependencies]
+fast = ["cryptography>=3.4"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+wps-attack = "wps_attack.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/sachintha82288-cpu/WiFi-WPS-Attack-Tool"
+
+[tool.setuptools]
+packages = ["wps_attack"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

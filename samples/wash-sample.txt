@@ -1,0 +1,4 @@
+    BSSID     Channel   WPS   Locked  Pin         R #     Signal      UUID    SSID
+    00:11:22:33:44:55     6   Y       N       12345670      1 0     -50 dBm  462a72b6-6345-4111-a199-001122334455  CoffeeShop
+    aa:bb:cc:dd:ee:ff     11  Y       Y       -             0 0     -70 dBm  462a72b6-6345-4111-a199-001122334455  LockedAP
+    11:22:33:44:55:66     6   N       N       -             0 0     -80 dBm  462a72b6-6345-4111-a199-001122334455  NoWPS

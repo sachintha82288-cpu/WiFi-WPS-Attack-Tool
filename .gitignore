@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual envs
+.venv/
+venv/
+
+# Tool outputs (keep the repo clean)
+reports/
+*.cap.json
+captures/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store

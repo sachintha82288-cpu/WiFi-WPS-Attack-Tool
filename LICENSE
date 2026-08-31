@@ -1,0 +1,40 @@
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+
+SPDX-License-Identifier: GPL-3.0-or-later
+
+Copyright (C) 2026 WiFi-WPS-Attack-Tool contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Full text of the GNU General Public License v3.0:
+<https://www.gnu.org/licenses/gpl-3.0.txt>
+
+--------------------------------------------------------------------------
+
+This project contains ports and implementations of techniques and code
+originating from, among others:
+
+  * pixiewps (https://github.com/wiire-a/pixiewps) - GPL-3.0-or-later
+  * reaver-wps-fork-t6x (https://github.com/t6x/reaver-wps-fork-t6x) -
+    GPL-2.0-or-later
+  * the wpa_supplicant/hostapd reference implementation (BSD-2-Clause)
+
+The combined work is licensed under the GNU General Public License
+version 3 or later.  The pixie-dust algorithms (Ralink LFSR, Realtek
+glibc PRNG model, Broadcom eCos LCGs) are implemented here as clean-room
+Python ports of the reference implementations above; their mathematical
+descriptions remain subject to their original licenses, and using this
+tooling to exploit the corresponding vulnerabilities is your
+responsibility under the laws that apply to you.
